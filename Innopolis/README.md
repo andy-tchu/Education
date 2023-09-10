@@ -1,1 +1,1 @@
-#Innopolis educational projects
+Innopolis educational projects
