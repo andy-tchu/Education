@@ -13,3 +13,6 @@ https://github.com/andy-tchu/Education/YandexHandbookPython/handbook_python_2_2.
 
 ### 2.3. Циклы
 https://github.com/andy-tchu/Education/YandexHandbookPython/handbook_python_2_3.py
+
+### 2.4. Вложенные циклы
+https://github.com/andy-tchu/Education/YandexHandbookPython/handbook_python_2_4.py
