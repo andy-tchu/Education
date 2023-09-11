@@ -1,5 +1,7 @@
-# Yandex Handbook Python Solutions
+# Education
+
+## Yandex Handbook Python Solutions
 https://academy.yandex.ru/handbook/python
 
-## 2.1.Ввод и вывод данных. Операции с числами, строками. Форматирование
+### 2.1.Ввод и вывод данных. Операции с числами, строками. Форматирование
 https://github.com/andy-tchu/Education/YandexHandbookPython/handbook_python_2_1.py
