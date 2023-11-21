@@ -1,0 +1,20 @@
+{
+  "name": "iceland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^5.0.0",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "gulp-cssmin": "^0.2.0"
+  }
+}

@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    position: relative;
+}
+
+.btn-left {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 25px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.btn-right {
+    position: absolute;
+    top: calc(50% - 30px);;
+    right: 25px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+    .btn-left {
+        display: none !important;
+    }
+
+    .btn-right {
+        display: none !important;
+    }
+}
+
+.main-discount {
+    background-image: url("../images/image1.png");
+    max-height: 640px;
+    min-height: 200px;
+    aspect-ratio: 2.0625;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-gift {
+    background-image: url("../images/image2.png");
+    max-height: 640px;
+    min-height: 200px;
+    aspect-ratio: 2.0625;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-berrytea {
+    background-image: url("../images/image3.png");
+    max-height: 640px;
+    min-height: 200px;
+    aspect-ratio: 2.0625;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ui-icon.iconOpen {
+    background: url('../images/open.png') no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.ui-icon.iconClosed {
+    background: url('../images/closed.png') no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.ui-accordion .ui-accordion-header {
+    color: white;
+    padding: 26px 50px 25px 23px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #076BFF 0%, #007BFF 100%);
+    font-weight: bold;
+}
+
+.ui-accordion .ui-accordion-content {
+    border: none;
+    padding: 16px 23px;
+    line-height: 24px
+}
+
+.ui-accordion .ui-accordion-content p {
+    margin-bottom: 0;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+    position: absolute;
+    right: 28px !important;
+    top: 29px;
+}
+
+#order-thanks {
+    display: none;
+}
