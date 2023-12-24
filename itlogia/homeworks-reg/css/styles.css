@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunito-Bold.ttf");
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    background: linear-gradient(
+            to right,
+            white 0%,
+            white 50%,
+            #F8F8FA 50%,
+            #F8F8FA 100%
+    );
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 112px 46px 191px 63px;
+    box-sizing: border-box;
+}
+
+.main-image {
+    margin-top: 60px;
+}
+
+.signup-info {
+    max-width: 496px;
+}
+
+.signup-form-title {
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 7px;
+    height: 56px;
+}
+
+.signup-form-text {
+    color: #636363;
+    font-size: 22px;
+    line-height: 27px; /* 122.727% */
+    height: 81px;
+    margin-bottom: 42px;
+}
+
+.input-form {
+    width: 452px;
+}
+
+.signup-input {
+    width: 452px;
+    height: 60px;
+    color: #323232;
+    border-bottom: 1px solid #C6C6C4;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.signup-input input {
+    width: 452px;
+    font-size: 20px;
+    line-height: 27px; /* 135% */
+    outline: none;
+    border: none;
+}
+
+.signup-input div {
+    color: #C6C6C4;
+    font-size: 16px;
+    line-height: 27px; /* 168.75% */
+}
+
+.agreement {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.agreement-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.agreement-checkbox {
+    margin: 0 2px 2px 2px
+}
+
+.agreement-text {
+    margin-left: 10px;
+    color: #636363;
+    font-size: 16px;
+    line-height: 27px; /* 168.75% */
+}
+
+.error-input {
+    font-size: 12px!important;
+    color: red!important;
+    margin-top: 2px;
+    margin-left: 5px;
+    display: none;
+}
+
+.order-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-bottom-action {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 210px;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    background: #DD3142;
+    margin-bottom: 44px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 27px; /* 135% */
+    cursor: pointer;
+}
+
+.order-bottom-already {
+    display: flex;
+    justify-content: center;
+}
+
+.order-bottom-already a {
+    text-decoration: none;
+    color: #636363;;
+    font-size: 16px;
+    line-height: 27px; /* 168.75% */
+}
