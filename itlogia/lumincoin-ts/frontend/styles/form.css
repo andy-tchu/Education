@@ -1,0 +1,54 @@
+.form {
+    width: 397px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.form-title {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #052C65;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-check-label {
+    color: #000;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.form-account {
+    color: #000;
+    font-size: 12px;
+}
+
+.form-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+    .form {
+        width: 300px;
+    }
+}

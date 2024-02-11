@@ -1,0 +1,13 @@
+.category-expenses-form-input {
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.category-expenses-form-action {
+    margin-top: 20px;
+    display: flex;
+}
+
+.category-expenses-form-action .btn-success {
+    margin-right: 10px;
+}

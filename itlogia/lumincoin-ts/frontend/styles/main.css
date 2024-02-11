@@ -1,0 +1,35 @@
+.params {
+    padding-top: 60px;
+    margin-left: 60px;
+}
+
+.charts {
+    padding-bottom: 173px;
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chart {
+    width: 435px;
+    margin-left: 84px;
+    margin-right: 84px;
+}
+
+@media screen and (max-width: 991px) {
+    .params {
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+
+    .charts {
+        padding-bottom: 0;
+        margin: 20px 0 20px 20px;
+    }
+
+    .chart {
+        width: 320px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

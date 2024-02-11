@@ -1,0 +1,37 @@
+.revenue-expenses-form-inputs {
+    margin-left: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.revenue-expenses-form-input {
+    max-width: 397px;
+    margin-bottom: 10px;
+}
+
+.revenue-expenses-form-action {
+    margin-top: 10px;
+    display: flex;
+}
+
+.revenue-expenses-form-action .btn-success {
+    margin-right: 10px;
+}
+
+.revenue-expenses-form-sum-input {
+    position: relative;
+}
+
+.revenue-expenses-form-sum {
+    position: absolute;
+    left: 14px;
+    top: 7px;
+}
+
+@media screen and (max-width: 991px) {
+    .revenue-expenses-form-inputs {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}

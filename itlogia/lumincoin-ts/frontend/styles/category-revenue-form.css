@@ -1,0 +1,13 @@
+.category-revenue-form-input {
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.category-revenue-form-action {
+    margin-top: 20px;
+    display: flex;
+}
+
+.category-revenue-form-action .btn-success {
+    margin-right: 10px;
+}

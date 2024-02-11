@@ -1,0 +1,43 @@
+<section class="main border-1 border-start">
+    <div class="grand-title">Главная</div>
+    <div class="params">
+        <input type="radio" class="btn-check main-period" name="params" id="today" autocomplete="off" checked>
+        <label class="param btn btn-outline-secondary" for="today">Сегодня</label>
+
+        <input type="radio" class="btn-check main-period" name="params" id="week" autocomplete="off">
+        <label class="param btn btn-outline-secondary" for="week">Неделя</label>
+
+        <input type="radio" class="btn-check main-period" name="params" id="month" autocomplete="off">
+        <label class="param btn btn-outline-secondary" for="month">Месяц</label>
+
+        <input type="radio" class="btn-check main-period" name="params" id="year" autocomplete="off">
+        <label class="param btn btn-outline-secondary" for="year">Год</label>
+
+        <input type="radio" class="btn-check main-period" name="params" id="all" autocomplete="off">
+        <label class="param btn btn-outline-secondary" for="all">Все</label>
+        <div class="param-interval">
+            <input type="radio" class="btn-check main-period" name="params" id="interval" autocomplete="off">
+            <label class="param btn btn-outline-secondary" for="interval">Интервал</label>
+            <div class="param-dates">
+                <div class="from param-date">
+                    <label for="date1">с</label>
+                    <input class="date form-control" placeholder="Дата..." type="text" id="date1" disabled
+                           onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                </div>
+                <div class="param-date">
+                    <label for="date2">по</label>
+                    <input class="date form-control" placeholder="Дата..." type="text" id="date2" disabled
+                           onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="charts">
+        <div class="chart">
+            <canvas id="revenues"></canvas>
+        </div>
+        <div class="chart">
+            <canvas id="expenses"></canvas>
+        </div>
+    </div>
+</section>

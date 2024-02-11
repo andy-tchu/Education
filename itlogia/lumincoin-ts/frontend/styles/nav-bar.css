@@ -1,0 +1,95 @@
+.nav-bar-main {
+    width: 219px;
+    height: 100%;
+    justify-content: space-between;
+    min-height: 1024px;
+}
+
+.nav-bar-top {
+    font-size: 14px;
+}
+
+.nav-bar-user {
+    padding: 20px 20px 40px 20px;
+}
+
+.nav-bar-user-img {
+    margin-right: 16px;
+}
+
+.nav-link {
+    padding: 16px 12px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 5px;
+}
+
+.nav-bar-balance {
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-bar-balance span {
+    margin-left: 10px;
+    color: #0D6EFD;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.btn-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.btn-toggle svg {
+    transition: transform .35s ease;
+}
+
+.btn-toggle[aria-expanded="true"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-toggle[aria-expanded="true"] svg {
+    stroke: white;
+    transform: rotate(90deg);
+}
+
+.btn-toggle.active {
+    stroke: white;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-bar-logo {
+    padding: 40px 70px 20px 50px;
+}
+
+.nav-bar-menu {
+    padding: 60px 20px 60px 20px
+}
+
+.dropdown-menu {
+    transform: translate(20px, -80px)!important;
+}
+
+.user-info {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-bar-main {
+        min-height: 0px;
+    }
+
+    .nav-bar-logo {
+        padding: 10px;
+    }
+}

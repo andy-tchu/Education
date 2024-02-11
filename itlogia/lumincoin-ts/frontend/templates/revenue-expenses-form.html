@@ -1,0 +1,42 @@
+<section class="revenue-expanses-form">
+    <div class="grand-title" id="form-title">Создание дохода/расхода</div>
+    <div class="revenue-expenses-form-inputs">
+        <select class="form-select select-ph revenue-expenses-form-input" id="operation-type" required>
+            <option value="" hidden>Тип...</option>
+            <option value="1" class="select-option operation-type" id="income">Доход</option>
+            <option value="2" class="select-option operation-type" id="expense">Расход</option>
+        </select>
+        <select class="form-select select-ph revenue-expenses-form-input" id="operation-category" required>
+            <option value="" hidden>Категория...</option>
+
+        </select>
+        <div class="input-group">
+        <input type="text" placeholder="Сумма в $..."
+               class="form-control revenue-expenses-form-input revenue-expenses-form-sum-input" id="revenue-expenses-form-sum-input"/>
+            <span class="revenue-expenses-form-sum" id="revenue-expenses-form-sum"></span>
+        </div>
+        <input type="text" placeholder="Дата..."
+               class="revenue-expenses-form-date form-control revenue-expenses-form-input" id="revenue-expenses-form-date-input" onfocus="(this.type='date')"
+               onblur="if(this.value==''){this.type='text'}">
+        <input type="text" placeholder="Комментарий..."
+               class="revenue-expenses-form-comment form-control revenue-expenses-form-input" id="revenue-expenses-form-comm-input">
+        <div class="revenue-expenses-form-action">
+            <a href="#/revenue-expenses">
+                <button type="button" class="btn btn-success" id="success">Создать</button></a>
+            <a href="#/revenue-expenses">
+                <button type="button" class="btn btn-danger">Отмена</button>
+            </a>
+        </div>
+    </div>
+</section>
+<script>
+    export default {
+        name: "App",
+
+        data() {
+            return {
+                numVal: "",
+            };
+        },
+    };
+</script>
