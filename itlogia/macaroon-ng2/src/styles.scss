@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: GilroyRegular;
+  src: url("./assets/fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: GilroyMedium;
+  src: url("./assets/fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: GilroyBold;
+  src: url("./assets/fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url("./assets/fonts/Gilroy-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: TavolgaFree;
+  src: url("./assets/fonts/Tavolga Free.ttf");
+}
+
+body {
+  font-family: TavolgaFree, sans-serif;
+  position: relative;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.button {
+  //background-image: linear-gradient(90deg, rgb(113, 8, 30) 0%, rgb(215, 72, 92) 100%);
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  font-size: 18px;
+  font-family: GilroyBold, sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  transition: all .5s ease;
+}
+
+.button:hover {
+  box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
+}

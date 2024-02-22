@@ -1,0 +1,17 @@
+<div class="product">
+  <div class="product-image">
+    <img src="assets/images/{{product.image}}" alt="Macaroon" class="product-image-img">
+  </div>
+  <div class="product-border">
+    <div class="product-title">{{product.title}}</div>
+    <div class="product-bottom">
+      <div class="product-count-price">
+        <div class="product-count">{{product.count}} шт.</div>
+        <div class="product-price">{{product.price | currency :  "RUB": ""}} руб.</div>
+      </div>
+      <div class="product-action">
+        <button class="button product-button" buttonColor defaultButtonBgColor='rgb(113, 8, 30)' hoverButtonBgColor='rgb(215, 72, 92)' (click)="addProductToCart(product)">Заказать</button>
+      </div>
+    </div>
+  </div>
+</div>
