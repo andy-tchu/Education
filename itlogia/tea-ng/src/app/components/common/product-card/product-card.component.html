@@ -1,0 +1,15 @@
+<div class="col">
+  <div class="product border border-secondary-subtle">
+    <div class="product-image">
+      <img src="{{product.image}}" class="img-fluid w-100" alt="Tea">
+    </div>
+    <div class="product-info m-3">
+      <div class="product-title mb-2"><strong>{{product.title}}</strong></div>
+      <div class="product-text mb-4">{{product.description | shortDescription}}
+      </div>
+      <div class="product-action">
+        <button class="btn btn-primary px-5 hvr-grow-shadow" [routerLink]="['/products', product.id]">Подробнее</button>
+      </div>
+    </div>
+  </div>
+</div>

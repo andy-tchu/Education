@@ -1,0 +1,9 @@
+<div class="products container mt-5 justify-content-center wow animate__backInRight">
+  <div class="products-title h1 text-center mb-5"><strong>Наши чайные коллекции</strong></div>
+  <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
+      <product-card *ngFor="let product of products" [product]="product" (addToCartEvent)="addToCart($event)"></product-card>
+  </div>
+  <div *ngIf="loading" class="loader-bg">
+    <div class="loader"></div>
+  </div>
+</div>

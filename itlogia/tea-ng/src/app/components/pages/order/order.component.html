@@ -1,0 +1,118 @@
+<div id="order" class="order container mt-5 justify-content-center" [formGroup]="orderForm">
+  <div class="products-title h1 text-center mb-5"><strong>Сделать заказ</strong></div>
+  <div class="row">
+    <div class="col-1 col-md-3"></div>
+    <div class="col-10 col-md-6">
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="product-input" class="form-label">Товар</label>
+            <input type="text" class="form-control" id="product-input" formControlName="product">
+            <div *ngIf="!product || product.value === ''" class="text-danger">
+                Товар должен быть заполнен.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="mb-3">
+            <label for="name-input" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="name-input" formControlName="name">
+            <div *ngIf="name?.invalid && (name?.dirty || name?.touched)">
+              <div class="text-danger" *ngIf="name?.errors?.['required']">
+                Имя должно быть заполнено.
+              </div>
+              <div class="text-danger" *ngIf="name?.errors?.['pattern']">
+                Имя введено некорректно.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="lastname-input" class="form-label">Фамилия</label>
+            <input type="text" class="form-control" id="lastname-input" formControlName="lastname">
+            <div *ngIf="lastname?.invalid && (lastname?.dirty || lastname?.touched)">
+              <div class="text-danger" *ngIf="lastname?.errors?.['required']">
+                Фамилия должна быть заполнена.
+              </div>
+              <div class="text-danger" *ngIf="lastname?.errors?.['pattern']">
+                Фамилия введена некорректно.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="phone-input" class="form-label">Телефон</label>
+            <input type="text" class="form-control" id="phone-input" formControlName="phone">
+            <div *ngIf="phone?.invalid && (phone?.dirty || phone?.touched)">
+              <div class="text-danger" *ngIf="phone?.errors?.['required']">
+                Телефон должен быть заполнен.
+              </div>
+              <div class="text-danger" *ngIf="phone?.errors?.['pattern']">
+                Телефон введен некорректно.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="col">
+          <div class="mb-3">
+            <label for="country-input" class="form-label">Страна</label>
+            <input type="text" class="form-control" id="country-input" formControlName="country">
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-3">
+            <label for="index-input" class="form-label">Индекс</label>
+            <input type="text" class="form-control" id="index-input" formControlName="index">
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="address-input" class="form-label">Адрес</label>
+            <input type="text" class="form-control" id="address-input" formControlName="address">
+            <div *ngIf="address?.invalid && (address?.dirty || address?.touched)">
+              <div class="text-danger" *ngIf="address?.errors?.['required']">
+                Адрес должен быть заполнен.
+              </div>
+              <div class="text-danger" *ngIf="address?.errors?.['pattern']">
+                Адрес введен некорректно.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="comment-input" class="form-label">Комментарий к заказу</label>
+            <input type="text" class="form-control" id="comment-input" formControlName="comment">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-1 col-md-3"></div>
+  </div>
+  <div class="row mt-3">
+    <div class="col-1 col-md-3"></div>
+    <div class="col-10 col-md-6">
+      <div class="order-action">
+        <button id="create-order" class="btn btn-primary px-5 hvr-grow-shadow" (click)="createOrder()" [disabled]="orderForm.invalid">Отправить</button>
+        <div class="text-danger" *ngIf="orderError">
+          Произошла ошибка. Попробуйте еще раз.
+        </div>
+      </div>
+    </div>
+    <div class="col-1 col-md-3"></div>
+  </div>
+</div>
+
+<div id="order-thanks" class="container mt-5 justify-content-center">
+  <div class="h1 text-center mb-5"><strong>Спасибо за заказ!</strong></div>
+</div>

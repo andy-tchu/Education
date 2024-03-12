@@ -1,0 +1,21 @@
+<div class="product-container d-flex justify-content-center">
+  <div class="product card border-secondary mt-3" style="max-width: 75%; justify-content: center;">
+    <div class="row g-0">
+      <div class="product-image col-md-4 justify-content-end">
+        <img src="{{product.image}}" class="img-fluid rounded-start" alt="Tea">
+        <h3 class="d-flex justify-content-center">{{product.price | addRubble}}</h3>
+      </div>
+      <div class="product-info card-body col-md-8">
+        <h4 class="product-title card-title"><strong>{{product.title}}</strong></h4>
+        <p class="product-text mb-4 card-text">{{product.description}}
+        </p>
+        <div class="product-action">
+          <button class="btn btn-primary px-5 hvr-grow-shadow" (click)="addProductToCart(product.title)">Купить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="loading" class="loader-bg">
+    <div class="loader"></div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+.ui-icon.iconOpen {
+  background-image: url('/assets/images/open.png');
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.ui-icon.iconClosed {
+  background-image: url('/assets/images/closed.png');
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.ui-accordion .ui-accordion-header {
+  color: white;
+  padding: 26px 50px 25px 23px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, #076BFF 0%, #007BFF 100%);
+  font-weight: bold;
+}
+
+.ui-accordion .ui-accordion-content {
+  border: none;
+  padding: 16px 23px;
+  line-height: 24px
+}
+
+.ui-accordion .ui-accordion-content p {
+  margin-bottom: 0;
+}
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+  position: absolute;
+  right: 28px !important;
+  top: 29px;
+}
+
+
+.loader-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.41);
+}
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid #007BFF;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
