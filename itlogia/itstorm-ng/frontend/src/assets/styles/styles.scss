@@ -1,0 +1,14 @@
+@import "variables";
+@import "fonts";
+@import "global";
+
+//размещено здесь, т.к. иначе не работает стиль для span помещенного в innerHtml
+.banner{
+  .banner-title{
+    span {
+      color: $blue-text-color;
+    }
+  }
+}
+
+//html, body { height: 100%; }

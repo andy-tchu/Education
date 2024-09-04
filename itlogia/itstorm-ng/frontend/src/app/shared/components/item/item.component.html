@@ -1,0 +1,13 @@
+<div class="item" *ngIf="item">
+  <img src="{{serverStaticPath + item.image}}" alt="Item">
+  <div class="item-title">
+    {{item.title}}
+  </div>
+  <div class="item-text">
+    {{item.text}}
+  </div>
+  <div class="item-bottom">
+    <div class="item-price">От {{item.price.toLocaleString('ru-RU')}}₽</div>
+    <button class="button-big" (click)="openRequest()">Подробнее</button>
+  </div>
+</div>

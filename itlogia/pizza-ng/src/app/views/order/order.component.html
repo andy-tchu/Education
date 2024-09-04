@@ -1,0 +1,30 @@
+<section class="order" id="order">
+    <div class="container">
+        <div class="order-text">
+            <div class="order-text-title double-title">
+                <span>Хватит думать!</span> Доставим заказ за 30 минут!
+            </div>
+            <div class="order-text-message">
+                Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на
+                1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим
+                сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!
+            </div>
+        </div>
+        <div class="order-form">
+            <span class="p-float-label">
+                <input class="order-input" type="text" id="product-input" pInputText
+                       [(ngModel)]="formValues.productTitle"/>
+                <label for="product-input">Пицца</label>
+            </span>
+
+            <input class="order-input" type="text" id="address-input" pInputText placeholder="Адрес доставки"
+                   [(ngModel)]="formValues.address">
+            <input class="order-input" type="text" coolInput id="phone-input" pInputText placeholder="Телефон"
+                   [(ngModel)]="formValues.phone">
+            <button class="button" tuiButton (click)="createOrder()">Оформить заказ</button>
+        </div>
+        <div class="order-image">
+            <img src="../../../assets/images/pizzzzza.png" alt="Pizza">
+        </div>
+    </div>
+</section>

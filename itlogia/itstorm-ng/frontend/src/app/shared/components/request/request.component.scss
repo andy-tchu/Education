@@ -1,0 +1,125 @@
+@import "../../../../assets/styles/variables";
+
+.request {
+  width: 727px;
+  height: 489px;
+  background-color: #FFFFFF;
+  position: relative;
+
+  .request-close {
+    border: none;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  .request-main {
+    padding-top: 94px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    box-sizing: border-box;
+
+    .request-title {
+      font-family: Lora, sans-serif;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 49px;
+      margin-bottom: 20px;
+      color: $blue-text-color;
+      text-align: center;
+    }
+
+    .request-form {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .option-main {
+        cursor: pointer;
+        box-sizing: border-box;
+        position: relative;
+
+        padding: 17px 20px;
+        border: 2px solid #709FDC;
+        border-radius: 3px;
+
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      .option-list {
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 3;
+        display: none;
+        background: #FFFFFF;
+        border: 2px solid #709FDC;
+        border-radius: 3px;
+        width: 422px;
+
+        .option-list-item {
+          padding: 14px 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:hover {
+            background-color: #709FDC;
+          }
+        }
+
+        &.open {
+          display: block;
+        }
+      }
+
+      input {
+        margin-top: 5px;
+        width: 100%;
+      }
+    }
+
+    .request-action {
+      margin-top: 20px;
+    }
+
+    .bad-request {
+      color: red;
+    }
+  }
+
+  .request-success {
+    padding: 163px 142px;
+    box-sizing: border-box;
+    text-align: center;
+
+
+    .success-title {
+      font-family: Lora, sans-serif;
+      font-size: 38px;
+      font-weight: 400;
+      color: $blue-text-color;
+    }
+
+    .success-text {
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 20px;
+      color: $dark-text-color;
+    }
+
+    .success-action {
+      margin-top: 40px;
+    }
+  }
+}

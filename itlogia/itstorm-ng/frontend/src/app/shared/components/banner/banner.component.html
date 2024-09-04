@@ -1,0 +1,13 @@
+<div class="banner" *ngIf="banner" style="background-image: url({{serverStaticPath + banner.image}})">
+  <div class="banner-pre-title">
+    {{banner.preTitle | uppercaseText}}
+  </div>
+  <div class="banner-title" [innerHTML]="bannerTitle">
+  </div>
+  <div class="banner-text" *ngIf="banner.text">
+    {{banner.text}}
+  </div>
+  <div class="banner-action">
+    <button class="button-big" (click)="openRequest()">Подробнее</button>
+  </div>
+</div>

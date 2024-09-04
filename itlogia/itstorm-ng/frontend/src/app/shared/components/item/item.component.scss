@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/variables";
+
+
+.item {
+  width: 290px;
+  font-family: 'Montserrat', sans-serif;
+
+  .item-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $blue-text-color;
+  }
+
+  .item-text {
+    height: 90px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .item-bottom {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+
+    .item-price {
+      font-weight: 600;
+      font-size: 20px;
+      color: $blue-text-color;
+
+    }
+    .button-big {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+  }
+
+
+}

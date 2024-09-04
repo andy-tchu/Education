@@ -1,0 +1,84 @@
+@import "../../../../assets/styles/variables";
+
+.comment {
+  font-family: Montserrat, sans-serif;
+  margin-top: 40px;
+
+  .comment-header {
+    display: flex;
+
+    .comment-image {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #709FDC;
+      background-color: #B9D5FD;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .comment-header-right {
+      margin-left: 26px;
+
+      .comment-username {
+        font-size: 18px;
+        font-weight: 600;
+        color: $blue-text-color;
+      }
+
+      .comment-date {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #BEBEBE;
+      }
+    }
+  }
+
+  .comment-text {
+    margin-top: 15px;
+    margin-bottom: 39px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+  }
+
+  .comment-actions {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    .comment-action {
+      display: flex;
+      margin-right: 15px;
+      align-items: center;
+
+      .comment-action-count {
+        margin-right: 3px;
+      }
+
+      .comment-action-image {
+        font-size: 0;
+      }
+    }
+
+    .comment-action.logged-in {
+      cursor: pointer;
+    }
+
+    .comment-action.active {
+      .comment-action-count {
+        color: #709FDC;
+      }
+
+      .comment-action-image {
+        svg path {
+          stroke: #709FDC;
+        }
+      }
+    }
+  }
+}
+

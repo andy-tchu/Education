@@ -1,0 +1,38 @@
+<div class="request" [formGroup]="requestForm">
+  <button mat-dialog-close class="request-close">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="1.93562" y1="2.64999" x2="13.9564" y2="14.6708" stroke="#BEBEBE" stroke-linecap="round"/>
+      <line x1="13.9236" y1="2.62978" x2="1.90277" y2="14.6506" stroke="#BEBEBE" stroke-linecap="round"/>
+    </svg>
+  </button>
+  <form class="request-main" *ngIf="!success">
+    <div *ngIf="requestSelected" class="request-title">Заявка на услугу</div>
+    <div *ngIf="!requestSelected" class="request-title">Закажите бесплатную консультацию!</div>
+    <div class="request-form">
+      <div class="option-main" *ngIf="requestSelected" (click)="toggleOption()">
+        {{requestSelected}}
+        <div class="option-list" clickOutside (clickOutside)="clickedOutside()" [class.open]="requestsOpen" >
+          <div class="option-list-item"  *ngFor="let request of requestsList | keyvalue" (click)="changeService(request.value)">{{request.value}}</div>
+        </div>
+      </div>
+      <input type="text"
+             [ngStyle]="{'border-color': requestForm.get('name')?.invalid
+                 && (requestForm.get('name')?.dirty || requestForm.get('name')?.touched) ? 'red' : ''}"
+             placeholder="Ваше имя" formControlName="name">
+      <input type="text"
+             [ngStyle]="{'border-color': requestForm.get('phone')?.invalid
+                 && (requestForm.get('phone')?.dirty || requestForm.get('phone')?.touched) ? 'red' : ''}"
+             placeholder="Ваш номер телефона" formControlName="phone">
+    </div>
+    <button *ngIf="requestSelected" class="request-action button-big" [disabled]="requestForm.invalid" (click)="createRequest('order')">Оставить заявку</button>
+    <button *ngIf="!requestSelected" class="request-action button-big" [disabled]="requestForm.invalid" (click)="createRequest('consultation')">Оставить заявку</button>
+    <div class="bad-request" *ngIf="error">произошла ошибка при отправке формы, попробуйте еще раз.</div>
+  </form>
+  <div class="request-success" *ngIf="success">
+    <div class="success-title">Спасибо за вашу заявку!</div>
+    <div class="success-text">Мы свяжемся с вами при первой же возможности.</div>
+    <div class="success-action">
+      <button mat-dialog-close class="button-small">Окей</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  color: #333333;
+}
+
+a {
+  color: #6933DC;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 14px 35px;
+  border-radius: 6px;
+  border: 0;
+  background: #6933DC;
+  color: #FFF;
+  font-size: 17px;
+  line-height: normal;
+  cursor: pointer;
+  transition: .4s;
+  text-decoration: none;
+
+  & a {
+    display: inline-block;
+  }
+
+  &:hover {
+    background: #371d72;
+  }
+
+  &:disabled {
+    background-color: #e2dfe7;
+    cursor: not-allowed;
+  }
+
+  &.button-transparent {
+    background: transparent;
+    color: #6933DC;
+    border: 1px solid #6933DC;
+
+    &:hover {
+      background: #6933DC;
+      color: white;
+    }
+
+    &:disabled {
+      background: transparent;
+      color: #e2dfe7;
+      border: 1px solid #e2dfe7;
+    }
+  }
+}
+
+.common-title {
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  color: #333333;
+
+  span {
+    color: #6933DC;
+  }
+}
+
+.big-title {
+  font-family: "Museo Sans Cyrl Bold", sans-serif;
+  font-size: 54px;
+  line-height: 65px;
+
+  span {
+    color: #6933DC;
+  }
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  border: 3px solid #6933DC;
+  border-radius: 50%;
+  margin: 0 15px 0 0;
+  transform: translateY(2px);
+  display: grid;
+  place-content: center;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px #6933DC;
+    transition: .2s ease transform;
+    transform: scale(0);
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
+}
+

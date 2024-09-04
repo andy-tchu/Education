@@ -1,0 +1,304 @@
+@import "../../../assets/styles/variables";
+
+.banners {
+  margin-bottom: 120px;
+
+  .container {
+    position: relative;
+
+    .carousel-arrows {
+
+      .move-backward {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 11px;
+        z-index: 99;
+      }
+
+      .move-forward {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 11px;
+        z-index: 99;
+      }
+    }
+  }
+}
+
+.services {
+  margin-bottom: 120px;
+
+  .container {
+    .services-title {
+      font-family: Lora, sans-serif;
+      font-weight: 400;
+      font-size: 38px;
+      color: $blue-text-color;
+      margin-bottom: 40px;
+    }
+
+    .services-items {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.about {
+  margin-bottom: 120px;
+  color: $dark-text-color;
+
+  .container {
+    display: flex;
+    box-sizing: border-box;
+
+    .about-photo {
+      height: 453px;
+      width: 460px;
+    }
+
+    .about-main {
+      padding-left: 68px;
+
+      .about-title {
+        font-family: Lora, sans-serif;
+        font-size: 38px;
+        font-weight: 400;
+        color: $blue-text-color;
+      }
+
+      .about-text {
+        margin-top: 20px;
+        max-width: 633px;
+        font-size: 14px;
+        line-height: 18px;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      .about-advantages {
+        margin-top: 40px;
+
+        .advantages-title {
+          font-family: Lora, sans-serif;
+          font-size: 26px;
+          font-weight: 400;
+          color: $blue-text-color;
+        }
+
+        .advantages {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 71px;
+
+          max-width: 703px;
+
+          .advantage {
+            display: flex;
+            margin-top: 20px;
+            width: 316px;
+            height: 90px;
+
+            .advantage-number {
+              font-family: Lora, sans-serif;
+              font-size: 50px;
+              font-weight: 500;
+              color: $blue-text-color;
+              position: relative;
+              width: 40px;
+              margin-top: 20px;
+              margin-left: 10px;
+              box-sizing: border-box;
+              text-align: center;
+
+
+              svg {
+                position: absolute;
+                top: 19px;
+                left: -8px;
+                z-index: -1;
+              }
+            }
+
+            .advantage-text {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              margin-left: 28px;
+              max-width: 256px;
+
+              span {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.blog-popular {
+  margin-bottom: 120px;
+
+  .container {
+    .blog-popular-title {
+      font-family: Lora, sans-serif;
+      font-size: 38px;
+      color: $blue-text-color;
+    }
+
+    .blog-popular-items {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    .blog-popular-action {
+      margin-top: 40px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+
+      .blog-popular-link {
+        font-weight: 500;
+        font-size: 20px;
+        color: $blue-text-color;
+        text-decoration: none;
+
+        svg {
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+}
+
+.reviews {
+  margin-bottom: 120px;
+
+  .container {
+
+    .review-title {
+      font-family: Lora, sans-serif;
+      font-weight: 400;
+      font-size: 38px;
+      color: $blue-text-color;
+      margin-bottom: 20px;
+    }
+
+    .reviews-carousel {
+      position: relative;
+
+      .review-item {
+        width: 396px;
+        height: 267px;
+        padding: 30px;
+        border: 2px solid #709FDC;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+        .review-item-head {
+          display: flex;
+          align-items: center;
+
+          .review-item-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-position: center;
+            background-size: cover;
+            margin-right: 26px;
+          }
+
+          .review-item-name {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: $blue-text-color;
+          }
+        }
+
+        .review-item-text {
+          margin-top: 15px;
+          font-size: 16px;
+          line-height: 22px;
+          color: $gray-text-color;
+        }
+      }
+
+      .reviews-arrows {
+        display: flex;
+
+        a {
+          top: calc(50% - 5px);
+          display: flex;
+          position: absolute;
+          cursor: pointer;
+
+          &.move-backward {
+            left: -25px;
+          }
+
+          &.move-forward {
+            right: -25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contacts {
+  margin-bottom: 120px;
+
+  .container {
+    display: flex;
+
+    .contacts-info {
+      margin-left: 26px;
+
+      .contacts-info-title {
+        font-family: Lora, sans-serif;
+        font-weight: 400;
+        font-size: 38px;
+        color: $blue-text-color;
+      }
+
+      .info-title {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        color: $blue-text-color;
+      }
+
+      .info-text {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 501px;
+      }
+
+      a{
+        text-decoration: none;
+        color: $gray-text-color;
+      }
+
+      .info-icons {
+        margin-top: 10px;
+
+        svg {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

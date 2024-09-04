@@ -1,0 +1,156 @@
+@import "variables";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: $gray-text-color;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+form {
+  width: 422px;
+}
+
+.article-text {
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: $blue-text-color;
+  }
+
+  h3 {
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: $blue-text-color;
+  }
+
+}
+
+textarea {
+  border: 2px solid #709FDC;
+  border-radius: 3px;
+  padding: 20px;
+
+  &::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.button-big {
+  box-sizing: border-box;
+  border: 0;
+  padding: 15px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #709FDC;
+
+  &:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+}
+
+.button-small {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: #709FDC;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 17px 20px;
+  border: 2px solid #709FDC;
+  border-radius: 3px;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A8ABA7;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: none;
+
+  box-sizing: border-box;
+  padding: 17px 20px;
+  border: 2px solid #709FDC;
+  border-radius: 3px;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #709FDC;
+}
+
+.mat-dialog-container {
+  padding: 0 !important;
+  border: 2px solid #FFFFFF !important;
+  border-radius: 10px !important;
+}
+
+.mat-menu-item {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: $gray-text-color;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #FFFFFF;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  border: 1px solid #FFFFFF;
+  background: transparent;
+}
+
+.hide-show-password {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  border: none;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+
